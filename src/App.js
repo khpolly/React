@@ -1,8 +1,7 @@
 
-import Costs from "./Components/Costs";
+import Costs from "./Components/Costs/Costs";
 
-function App() {
-
+const App = () => {
   const costs = [
     {
       date: new Date(2022, 2, 12),
