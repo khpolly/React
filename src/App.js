@@ -1,21 +1,22 @@
 
 import Costs from "./Components/Costs/Costs";
+import NewCost from "./Components/NewCost/NewCost";
 
 const App = () => {
   const costs = [
     {
       date: new Date(2022, 2, 12),
-      discription: 'Холодильник',
+      description: 'Холодильник',
       amount: 999.99,
     },
     {
       date: new Date(2022, 4, 25),
-      discription: 'Macbook',
+      description: 'Macbook',
       amount: 1590.99,
     },
     {
       date: new Date(2022, 5, 29),
-      discription: 'Джинсы',
+      description: 'Джинсы',
       amount: 49.99,
     },
   ];
@@ -23,7 +24,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Начнем изучение React!</h1>
+      <NewCost />
       <Costs costs={costs} />
     </div> 
   );
